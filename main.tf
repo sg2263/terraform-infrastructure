@@ -1,4 +1,3 @@
-
 resource "azurerm_resource_group" "tf_refer_rg" {
     name = "${var.resource_group_name}-${terraform.workspace}"
     location = var.location
