@@ -3,7 +3,7 @@ terraform {
     organization = "Shubhradip-Org-789"
 
     workspaces {
-      name = "terraform-infrastructure-dev"
+      name = "terraform-infrastructure-prod"
     }
   }
  
