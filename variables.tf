@@ -1,19 +1,19 @@
 variable "resource_group_name" {
   type    = string
-  default = "rg_new_terraform"
+ 
 }
 variable "location" {
   type    = string
-  default = "eastus2"
+  
 }
 variable "vnet_name" {
   type    = string
-  default = "vnet-terraform"
+
 }
 variable "vnet_address_space" {
 
   type    = list(string)
-  default = ["40.0.0.0/16"]
+
 }
 
 variable "subnets" {
@@ -41,33 +41,43 @@ variable "subnets" {
 }
 variable "ssh_port" {
   type = string
+  default = "22"
 }
 variable "http_port" {
   type = string
+  default = "80"
 }
 variable "https_port" {
   type = string
+  default = "443"
 }
 variable "all_port" {
   type = string
+  default = "*"
 }
 variable "all_ip" {
   type = string
+  default = "*"
 }
 variable "protocol" {
   type = string
+  default = "Tcp"
 }
 variable "access" {
   type = string
+  default = "Allow"
 }
 variable "priority_100" {
   type = number
+  default = 100
 }
 variable "priority_110" {
   type = number
+  default = 110
 }
 variable "priority_120" {
   type = number
+  default = 120
 }
 variable "direction_Outbound" {
   type    = string

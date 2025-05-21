@@ -3,10 +3,10 @@ terraform {
     organization = "Shubhradip-Org-789"
 
     workspaces {
-      name = "chatapp-dev"
+      name = "terraform-infrastructure-dev"
     }
   }
-
+ 
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
